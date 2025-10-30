@@ -18,7 +18,7 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 
 📦 Projeto_Dashboard/<br>
 │<br>
-├── app.py                                ***# Main da aplicação***<br>
+├── app.py &nbsp;&nbsp;&nbsp;&nbsp;       ***# Main da aplicação***<br>
 │<br>
 ├── requirements.txt                       ***# Dependências do projeto***<br>
 ├── README.md                              ***# Documentação do projeto***<br>
@@ -38,7 +38,7 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 │   └── uploads/                          ***# Armazena CSVs recém-enviados (aguardando importação)***<br>
 │<br>
 ├── dashboard/<br>
-│   ├── components/<br>               
+│   ├── components/            
 │   │   ├── base_chart.py                           ***# Super Classe para a consulta SQL e renderização de gráficos***<br>
 │   │   ├── filter_repository.py                   ***# Classe que busca opções de filtros no banco (vendedores, produtos, regiões)***<br>
 │   │   ├── sales_average_ticket_region_chart.py    ***# Gráfico de ticket médio por região***<br>
