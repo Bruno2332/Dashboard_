@@ -16,6 +16,8 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 
 ---
 
+## ⚙️ Estrutura de Arquivos
+
 📦 Projeto_Dashboard/<br>
 │<br>
 ├── app.py &nbsp;&nbsp;&nbsp;&nbsp;       ***# Main da aplicação***<br>
