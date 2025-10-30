@@ -108,7 +108,7 @@ pip install -r requirements.txt
 streamlit run app.py 
 ```
 ---
-#### 🧩 Requisitos
+## 🧩 Requisitos
 
 ***Python 3.10 ou superior<br>
 Streamlit<br>
@@ -119,7 +119,7 @@ Docker***<br>
 
 ---
 
-#### 🧑‍💻 Autor
+## 🧑‍💻 Autor
 
 Bruno Flor de Lys<br>
 📍 Ribeirão Preto — SP<br>
@@ -127,12 +127,12 @@ Bruno Flor de Lys<br>
 📧 brunolys23@gmail.com<br>
 
 ---
-#### 📜 Licença
+## 📜 Licença
 Distribuído sob a licença MIT.<br>
 Você é livre para usar, modificar e distribuir este projeto com os devidos créditos.<br>
 
 ---
-#### ✨ Observação
+## ✨ Observação
 
 Este projeto foi estruturado seguindo princípios de:<br>
 Arquitetura limpa e modular (OOP)<br>
