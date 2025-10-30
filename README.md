@@ -38,7 +38,7 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 │   └── uploads/                          ***# Armazena CSVs recém-enviados (aguardando importação)***<br>
 │<br>
 ├── dashboard/<br>
-│   ├── components/        <br>               
+│   ├── components/<br>               
 │   │   ├── base_chart.py                           ***# Super Classe para a consulta SQL e renderização de gráficos***<br>
 │   │   ├── filter_repository.py                   ***# Classe que busca opções de filtros no banco (vendedores, produtos, regiões)***<br>
 │   │   ├── sales_average_ticket_region_chart.py    ***# Gráfico de ticket médio por região***<br>
@@ -50,7 +50,7 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 │   │   ├── sales_over_time_chart.py      ***# Gráfico de vendas ao longo do tempo***<br>
 │   │   └── top_selling_products_chart.py ***# Gráfico de produtos mais vendidos***<br>
 │   │<br>
-│   ├── css/
+│   ├── css/<br>
 │   │   └── styles.css                     ***# Arquivo de estilo (Personalização da página inicial do streamlit)***<br>
 │   │<br>
 │   ├── dashboard_manager.py               ***# Classe que controla os gráficos e filtros do dashboard principal***<br>
