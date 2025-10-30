@@ -17,44 +17,44 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 ---
 
 📦 Projeto_Dashboard/<br>
-│
-├── app.py                                ***# Main da aplicação***
-│
-├── requirements.txt                       ***# Dependências do projeto***
-├── README.md                              ***# Documentação do projeto***
-│
-├── docker/
-│   └── docker-compose.yml                 ***# Configuração dos containers (PostgreSQL + PgAdmin)***
-│
-├── db/
-│   ├── connection.py                     ***# Classe de conexão com o banco PostgreSQL***
-│   ├── create_tables.sql                 ***# Script de criação das tabelas do banco de dados***
-│   ├── import_csv.py                     ***# Classe para importar e validar arquivos CSV***
-│   └── upload_manager.py                 ***# Classe que gerencia uploads e organização dos arquivos***
-│
-├── data/
-│   ├── processed/                        ***# Armazena CSVs já importados para o banco***
-│   │
-│   └── uploads/                          ***# Armazena CSVs recém-enviados (aguardando importação)***
-│
-├── dashboard/
-│   ├── components/                       
-│   │   ├── base_chart.py                           ***# Super Classe para a consulta SQL e renderização de gráficos***
-│   │   ├── filter_repository.py                   ***# Classe que busca opções de filtros no banco (vendedores, produtos, regiões)***
-│   │   ├── sales_average_ticket_region_chart.py    ***# Gráfico de ticket médio por região***
-│   │   ├── sales_average_ticket_seller_chart.py   ***# Gráfico de ticket médio por vendedor***
-│   │   ├── sales_by_product_chart.py     ***# Gráfico comparativo de vendas por produto***
-│   │   ├── sales_by_region_chart.py      ***# Gráfico comparativo de vendas por região***
-│   │   ├── sales_by_seller_chart.py      ***# Gráfico comparativo de vendas por vendedor***
-│   │   ├── sales_growth_index_chart.py   ***# Gráfico de índice de crescimento percentual***
-│   │   ├── sales_over_time_chart.py      ***# Gráfico de vendas ao longo do tempo***
-│   │   └── top_selling_products_chart.py ***# Gráfico de produtos mais vendidos***
-│   │
+│<br>
+├── app.py                                ***# Main da aplicação***<br>
+│<br>
+├── requirements.txt                       ***# Dependências do projeto***<br>
+├── README.md                              ***# Documentação do projeto***<br>
+│<br>
+├── docker/<br>
+│   └── docker-compose.yml                 ***# Configuração dos containers (PostgreSQL + PgAdmin)***<br>
+│<br>
+├── db/<br>
+│   ├── connection.py                     ***# Classe de conexão com o banco PostgreSQL***<br>
+│   ├── create_tables.sql                 ***# Script de criação das tabelas do banco de dados***<br>
+│   ├── import_csv.py                     ***# Classe para importar e validar arquivos CSV***<br>
+│   └── upload_manager.py                 ***# Classe que gerencia uploads e organização dos arquivos***<br>
+│<br>
+├── data/<br>
+│   ├── processed/                        ***# Armazena CSVs já importados para o banco***<br>
+│   │<br>
+│   └── uploads/                          ***# Armazena CSVs recém-enviados (aguardando importação)***<br>
+│<br>
+├── dashboard/<br>
+│   ├── components/        <br>               
+│   │   ├── base_chart.py                           ***# Super Classe para a consulta SQL e renderização de gráficos***<br>
+│   │   ├── filter_repository.py                   ***# Classe que busca opções de filtros no banco (vendedores, produtos, regiões)***<br>
+│   │   ├── sales_average_ticket_region_chart.py    ***# Gráfico de ticket médio por região***<br>
+│   │   ├── sales_average_ticket_seller_chart.py   ***# Gráfico de ticket médio por vendedor***<br>
+│   │   ├── sales_by_product_chart.py     ***# Gráfico comparativo de vendas por produto***<br>
+│   │   ├── sales_by_region_chart.py      ***# Gráfico comparativo de vendas por região***<br>
+│   │   ├── sales_by_seller_chart.py      ***# Gráfico comparativo de vendas por vendedor***<br>
+│   │   ├── sales_growth_index_chart.py   ***# Gráfico de índice de crescimento percentual***<br>
+│   │   ├── sales_over_time_chart.py      ***# Gráfico de vendas ao longo do tempo***<br>
+│   │   └── top_selling_products_chart.py ***# Gráfico de produtos mais vendidos***<br>
+│   │<br>
 │   ├── css/
-│   │   └── styles.css                     ***# Arquivo de estilo (Personalização da página inicial do streamlit)***
-│   │
-│   ├── dashboard_manager.py               ***# Classe que controla os gráficos e filtros do dashboard principal***
-│   └── home_screen.py                     ***# Tela inicial do sistema (menu principal e navegação)***
+│   │   └── styles.css                     ***# Arquivo de estilo (Personalização da página inicial do streamlit)***<br>
+│   │<br>
+│   ├── dashboard_manager.py               ***# Classe que controla os gráficos e filtros do dashboard principal***<br>
+│   └── home_screen.py                     ***# Tela inicial do sistema (menu principal e navegação)***<br>
 
 ---
 ## 🗄️ Estrutura do Banco de Dados
@@ -110,33 +110,33 @@ streamlit run app.py
 ---
 #### 🧩 Requisitos
 
-***Python 3.10 ou superior
-Streamlit
-Pandas
-Plotly
-Psycopg2
-Docker***
+***Python 3.10 ou superior<br>
+Streamlit<br>
+Pandas<br>
+Plotly<br>
+Psycopg2<br>
+Docker***<br>
 
 ---
 
 #### 🧑‍💻 Autor
 
-Bruno Flor de Lys
-📍 Ribeirão Preto — SP
-💼 Desenvolvedor
-📧 brunolys23@gmail.com
+Bruno Flor de Lys<br>
+📍 Ribeirão Preto — SP<br>
+💼 Desenvolvedor<br>
+📧 brunolys23@gmail.com<br>
 
 ---
 #### 📜 Licença
-Distribuído sob a licença MIT.
-Você é livre para usar, modificar e distribuir este projeto com os devidos créditos.
+Distribuído sob a licença MIT.<br>
+Você é livre para usar, modificar e distribuir este projeto com os devidos créditos.<br>
 
 ---
 #### ✨ Observação
 
-Este projeto foi estruturado seguindo princípios de:
-Arquitetura limpa e modular (OOP)
-Responsabilidade única (cada classe cumpre uma função)
-Extensibilidade fácil — adicionar novos gráficos requer apenas uma nova subclasse.
+Este projeto foi estruturado seguindo princípios de:<br>
+Arquitetura limpa e modular (OOP)<br>
+Responsabilidade única (cada classe cumpre uma função)<br>
+Extensibilidade fácil — adicionar novos gráficos requer apenas uma nova subclasse.<br>
 
 ---
