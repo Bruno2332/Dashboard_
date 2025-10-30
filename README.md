@@ -20,41 +20,41 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 │<br>
 ├── app.py &nbsp;&nbsp;&nbsp;&nbsp;       ***# Main da aplicação***<br>
 │<br>
-├── requirements.txt                       ***# Dependências do projeto***<br>
-├── README.md                              ***# Documentação do projeto***<br>
+├── requirements.txt &nbsp;&nbsp;&nbsp;&nbsp;                      ***# Dependências do projeto***<br>
+├── README.md      &nbsp;&nbsp;&nbsp;&nbsp;                        ***# Documentação do projeto***<br>
 │<br>
 ├── docker/<br>
-│   └── docker-compose.yml                 ***# Configuração dos containers (PostgreSQL + PgAdmin)***<br>
+│   └── docker-compose.yml  &nbsp;&nbsp;&nbsp;&nbsp;               ***# Configuração dos containers (PostgreSQL + PgAdmin)***<br>
 │<br>
 ├── db/<br>
-│   ├── connection.py                     ***# Classe de conexão com o banco PostgreSQL***<br>
-│   ├── create_tables.sql                 ***# Script de criação das tabelas do banco de dados***<br>
-│   ├── import_csv.py                     ***# Classe para importar e validar arquivos CSV***<br>
-│   └── upload_manager.py                 ***# Classe que gerencia uploads e organização dos arquivos***<br>
+│   ├── connection.py      &nbsp;&nbsp;&nbsp;&nbsp;               ***# Classe de conexão com o banco PostgreSQL***<br>
+│   ├── create_tables.sql    &nbsp;&nbsp;&nbsp;&nbsp;             ***# Script de criação das tabelas do banco de dados***<br>
+│   ├── import_csv.py       &nbsp;&nbsp;&nbsp;&nbsp;              ***# Classe para importar e validar arquivos CSV***<br>
+│   └── upload_manager.py      &nbsp;&nbsp;&nbsp;&nbsp;           ***# Classe que gerencia uploads e organização dos arquivos***<br>
 │<br>
 ├── data/<br>
-│   ├── processed/                        ***# Armazena CSVs já importados para o banco***<br>
+│   ├── processed/      &nbsp;&nbsp;&nbsp;&nbsp;                  ***# Armazena CSVs já importados para o banco***<br>
 │   │<br>
-│   └── uploads/                          ***# Armazena CSVs recém-enviados (aguardando importação)***<br>
+│   └── uploads/      &nbsp;&nbsp;&nbsp;&nbsp;                    ***# Armazena CSVs recém-enviados (aguardando importação)***<br>
 │<br>
 ├── dashboard/<br>
 │   ├── components/            
-│   │   ├── base_chart.py                           ***# Super Classe para a consulta SQL e renderização de gráficos***<br>
-│   │   ├── filter_repository.py                   ***# Classe que busca opções de filtros no banco (vendedores, produtos, regiões)***<br>
-│   │   ├── sales_average_ticket_region_chart.py    ***# Gráfico de ticket médio por região***<br>
-│   │   ├── sales_average_ticket_seller_chart.py   ***# Gráfico de ticket médio por vendedor***<br>
-│   │   ├── sales_by_product_chart.py     ***# Gráfico comparativo de vendas por produto***<br>
-│   │   ├── sales_by_region_chart.py      ***# Gráfico comparativo de vendas por região***<br>
-│   │   ├── sales_by_seller_chart.py      ***# Gráfico comparativo de vendas por vendedor***<br>
-│   │   ├── sales_growth_index_chart.py   ***# Gráfico de índice de crescimento percentual***<br>
-│   │   ├── sales_over_time_chart.py      ***# Gráfico de vendas ao longo do tempo***<br>
-│   │   └── top_selling_products_chart.py ***# Gráfico de produtos mais vendidos***<br>
+│   │   ├── base_chart.py    &nbsp;&nbsp;&nbsp;&nbsp;                       ***# Super Classe para a consulta SQL e renderização de gráficos***<br>
+│   │   ├── filter_repository.py    &nbsp;&nbsp;&nbsp;&nbsp;               ***# Classe que busca opções de filtros no banco (vendedores, produtos, regiões)***<br>
+│   │   ├── sales_average_ticket_region_chart.py &nbsp;&nbsp;&nbsp;&nbsp;   ***# Gráfico de ticket médio por região***<br>
+│   │   ├── sales_average_ticket_seller_chart.py &nbsp;&nbsp;&nbsp;&nbsp;  ***# Gráfico de ticket médio por vendedor***<br>
+│   │   ├── sales_by_product_chart.py  &nbsp;&nbsp;&nbsp;&nbsp;   ***# Gráfico comparativo de vendas por produto***<br>
+│   │   ├── sales_by_region_chart.py   &nbsp;&nbsp;&nbsp;&nbsp;   ***# Gráfico comparativo de vendas por região***<br>
+│   │   ├── sales_by_seller_chart.py  &nbsp;&nbsp;&nbsp;&nbsp;    ***# Gráfico comparativo de vendas por vendedor***<br>
+│   │   ├── sales_growth_index_chart.py  &nbsp;&nbsp;&nbsp;&nbsp; ***# Gráfico de índice de crescimento percentual***<br>
+│   │   ├── sales_over_time_chart.py  &nbsp;&nbsp;&nbsp;&nbsp;   ***# Gráfico de vendas ao longo do tempo***<br>
+│   │   └── top_selling_products_chart.py &nbsp;&nbsp;&nbsp;&nbsp;***# Gráfico de produtos mais vendidos***<br>
 │   │<br>
 │   ├── css/<br>
-│   │   └── styles.css                     ***# Arquivo de estilo (Personalização da página inicial do streamlit)***<br>
+│   │   └── styles.css      &nbsp;&nbsp;&nbsp;&nbsp;               ***# Arquivo de estilo (Personalização da página inicial do streamlit)***<br>
 │   │<br>
-│   ├── dashboard_manager.py               ***# Classe que controla os gráficos e filtros do dashboard principal***<br>
-│   └── home_screen.py                     ***# Tela inicial do sistema (menu principal e navegação)***<br>
+│   ├── dashboard_manager.py     &nbsp;&nbsp;&nbsp;&nbsp;          ***# Classe que controla os gráficos e filtros do dashboard principal***<br>
+│   └── home_screen.py          &nbsp;&nbsp;&nbsp;&nbsp;           ***# Tela inicial do sistema (menu principal e navegação)***<br>
 
 ---
 ## 🗄️ Estrutura do Banco de Dados
