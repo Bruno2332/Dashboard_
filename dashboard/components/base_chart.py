@@ -124,23 +124,25 @@ class BaseChart(ABC):
         
         chart_type = self.get_chart_type()
 
+        df_display = df.rename(columns=lambda c: c.replace("_", " ").title())
+
         if chart_type == "bar":
-            fig = px.bar(df, x=df.columns[0], y=df.columns[1], text_auto=True,
-                     title=self.title, color=df.columns[1], color_continuous_scale=self.color_scale)
+            fig = px.bar(df_display, x=df_display.columns[0], y=df_display.columns[1], text_auto=True,
+                     title=self.title, color=df_display.columns[1], color_continuous_scale=self.color_scale)
 
         elif chart_type == "line":
-            fig = px.line(df, x=df.columns[0], y=df.columns[1], markers=True, title=self.title)
+            fig = px.line(df_display, x=df_display.columns[0], y=df_display.columns[1], markers=True, title=self.title)
 
         elif chart_type == "pie":
-            fig = px.pie(df, names=df.columns[0], values=df.columns[1],
+            fig = px.pie(df_display, names=df_display.columns[0], values=df_display.columns[1],
                         hole=0.4, title=self.title)
 
         elif chart_type == "area":
-            fig = px.area(df, x=df.columns[0], y=df.columns[1], title=self.title)
+            fig = px.area(df_display, x=df_display.columns[0], y=df_display.columns[1], title=self.title)
 
         elif chart_type == "histogram":
-            fig = px.histogram(df, x=df.columns[0], y=(df.columns[1] if len(df.columns) > 1 else None),
-                            title=self.title, color=df.columns[0])
+            fig = px.histogram(df_display, x=df_display.columns[0], y=(df_display.columns[1] if len(df_display.columns) > 1 else None),
+                            title=self.title, color=df_display.columns[0])
 
         else:
             raise ValueError(f"Tipo de gráfico não suportado: {chart_type}")

@@ -1,5 +1,5 @@
 import pandas as pd
-from connection import DatabaseConnection
+from .connection import DatabaseConnection
 
 
 class CsvImporter:
@@ -61,7 +61,7 @@ class CsvImporter:
 
         missing_columns = set(self.EXPECTED_COLUMNS) - set(df.columns)
         if missing_columns:
-            raise ValueError(f'CSV inválido. Faltando: {missing_columns}')
+            print(f'CSV inválido. Existem colunas faltando ou diferente do padrão')
 
         df = df[self.EXPECTED_COLUMNS]
 
@@ -69,7 +69,7 @@ class CsvImporter:
             df["Valor"] = df["Valor"].astype(float)
             df["Data da Venda"] = pd.to_datetime(df["Data da Venda"], errors="raise")
         except Exception as e:
-            raise ValueError(f'Tipos de dados incorretos: {e}')
+            print(f'Tipos de dados incorretos: {e}')
         
 
     def _get_or_create(self, csv_field, name):
@@ -93,9 +93,9 @@ class CsvImporter:
 
 
         except KeyError:
-            raise ValueError(f"Campo {csv_field} não mapeado em Mapeamento de tabelas")
+            print(f"Campo {csv_field} não mapeado em Mapeamento de tabelas")
         except Exception:
-            raise RuntimeError(f"Erro ao inserir/consultar {name} em {csv_field}")
+            print(f"Erro ao inserir/consultar {name} em {csv_field}")
             
 
             

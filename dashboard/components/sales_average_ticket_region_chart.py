@@ -1,6 +1,4 @@
 from .base_chart import BaseChart
-import streamlit as st
-import pandas as pd
 
 class SalesAverageTicketRegionChart(BaseChart):
 
