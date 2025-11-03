@@ -1,11 +1,11 @@
-# 📊 Dashboard de Vendas — Streamlit + PostgreSQL
+# Dashboard de Vendas 
 
 Aplicação interativa desenvolvida em **Python (Streamlit)** para análise de dados de vendas em múltiplas dimensões — produto, vendedor, região e período.  
 O sistema oferece visualização dinâmica e filtrável dos indicadores, integração com banco de dados **PostgreSQL** através de consulta em SQL nativo e importação automatizada via arquivos **CSV**.
 
 ---
 
-## 🚀 Funcionalidades Principais
+## Funcionalidades Principais
 
 ✅ Importação de dados via arquivo `.csv`  
 ✅ Armazenamento automático no banco PostgreSQL  
@@ -16,9 +16,9 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 
 ---
 
-## ⚙️ Estrutura de Arquivos
+## Estrutura de Arquivos
 
-📦 Projeto_Dashboard/<br>
+Projeto_Dashboard/<br>
 │<br>
 ├── app.py &nbsp;&nbsp;&nbsp;&nbsp;       ***# Main da aplicação***<br>
 │<br>
@@ -59,28 +59,37 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 │   └── home_screen.py          &nbsp;&nbsp;&nbsp;&nbsp;           ***# Tela inicial do sistema (menu principal e navegação)***<br>
 
 ---
-## 🗄️ Estrutura do Banco de Dados
+## Estrutura do Banco de Dados
 
 ![Diagrama do Banco de Dados](db/estrutura_banco.png)
 
 ---
 
-## 📈 Gráficos Disponíveis
+## Gráficos Disponíveis
 
-| **Gráfico** | **Descrição** |
-|--------------|---------------|
-| **Produtos mais vendidos** | Soma de vendas por produto. |
-| **Vendas por período** | Evolução temporal das vendas. |
-| **Comparativo entre vendedores** | Ranking de desempenho. |
-| **Comparativo entre produtos** | Comparação de volume e valor. |
-| **Comparativo entre regiões** | Distribuição geográfica das vendas. |
-| **Índice de crescimento** | Crescimento percentual mês a mês. |
-| **Ticket médio por vendedor** | Valor médio das vendas por vendedor. |
-| **Ticket médio por região** | Valor médio das vendas por região. |
+| **Gráfico** | **Descrição** | **Tipo de Gráfico** |
+|--------------|---------------|--------------|
+| **Produtos mais vendidos** | Soma de vendas por produto. | Gráfico de Barra |
+| **Vendas por período** | Evolução temporal das vendas. | Gráfico de linha |
+| **Comparativo entre vendedores** | Ranking de desempenho. | Gráfico de Barra |
+| **Comparativo entre produtos** | Comparação de volume e valor. | Gráfico de Barra |
+| **Comparativo entre regiões** | Distribuição geográfica das vendas. | Gráfico de Torta |
+| **Índice de crescimento** | Crescimento percentual mês a mês. | Gráfico de Barra |
+| **Ticket médio por vendedor** | Valor médio das vendas por vendedor. | Gráfico de Barra |
+| **Ticket médio por região** | Valor médio das vendas por região. | Gráfico de Barra |
 
 ---
 
-## 💾 CSV Suportado
+## Filtros Suportados
+
+**Pelos períodos: Mensal, Trimestral, Semestral, Anual e Período Completo: Exceto para o gráfico de indice percentual de crescimento**<br>
+**Por Vendedor: Exceto para o gráfico de comparativo entre vendedores**<br>
+**Por Região: Exceto para o gráfico de comparativo entre regiões**<br>
+**Por produto: Exceto para o gráfico de comparativo entre produtos**
+
+---
+
+## CSV Suportado
 
 O arquivo .csv deve ter a seguinte estrutura de colunas para ser importado com sucesso no projeto
 
@@ -90,7 +99,7 @@ O arquivo .csv deve ter a seguinte estrutura de colunas para ser importado com s
 Dados de novos vendedores, produtos ou região são incorporados automaticamente ao banco caso existam.
 
 ---
-## ⚙️ Modo de Execução
+## Modo de Execução
 
 O projeto é executado em modo híbrido, combinando containers Docker para os serviços de banco de dados e administração, enquanto o aplicativo Streamlit é executado localmente nas dependências do Python.
 
@@ -110,7 +119,7 @@ pip install -r requirements.txt
 streamlit run app.py 
 ```
 ---
-## 🧩 Requisitos
+## Requisitos
 
 ***Python 3.10 ou superior<br>
 Streamlit<br>
@@ -121,20 +130,20 @@ Docker***<br>
 
 ---
 
-## 🧑‍💻 Autor
+## Autor
 
 Bruno Flor de Lys<br>
-📍 Ribeirão Preto — SP<br>
-💼 Desenvolvedor<br>
-📧 brunolys23@gmail.com<br>
+Ribeirão Preto — SP<br>
+Desenvolvedor<br>
+brunolys23@gmail.com<br>
 
 ---
-## 📜 Licença
+## Licença
 Distribuído sob a licença MIT.<br>
 Você é livre para usar, modificar e distribuir este projeto com os devidos créditos.<br>
 
 ---
-## ✨ Observação
+## Observação
 
 Este projeto foi estruturado seguindo princípios de:<br>
 Arquitetura limpa e modular (OOP)<br>

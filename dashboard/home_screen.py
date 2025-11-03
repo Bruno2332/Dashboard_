@@ -13,7 +13,7 @@ class HomeScreen:
 
 
     def render(self):
-        st.markdown('<h1>📊 Sistema de Análise de Vendas</h1>', unsafe_allow_html=True)
+        st.markdown('<h1>Sistema de Análise de Vendas</h1>', unsafe_allow_html=True)
         st.markdown('<p>Escolha uma das opções abaixo</p>', unsafe_allow_html=True)
         st.button("Ir para o Dashboard",
                 on_click=lambda: st.session_state.update({"page": "dashboard"}),
