@@ -7,12 +7,12 @@ O sistema oferece visualização dinâmica e filtrável dos indicadores, integra
 
 ## Funcionalidades Principais
 
-✅ Importação de dados via arquivo `.csv`  
-✅ Armazenamento automático no banco PostgreSQL  
-✅ Dashboard interativo com gráficos dinâmicos  
-✅ Filtros por período, vendedor, região e produto  
-✅ Cálculo de ticket médio e índice de crescimento  
-✅ Layout modular e escalável com orientação a objetos  
+- Importação de dados via arquivo `.csv`  
+-  Armazenamento automático no banco PostgreSQL  
+-  Dashboard interativo com gráficos dinâmicos  
+-  Filtros por período, vendedor, região e produto  
+-  Cálculo de ticket médio e índice de crescimento  
+-  Layout modular e escalável com orientação a objetos  
 
 ---
 
@@ -82,10 +82,10 @@ Projeto_Dashboard/<br>
 
 ## Filtros Suportados
 
-**Pelos períodos: Mensal, Trimestral, Semestral, Anual e Período Completo: Exceto para o gráfico de indice percentual de crescimento**<br>
-**Por Vendedor: Exceto para o gráfico de comparativo entre vendedores**<br>
-**Por Região: Exceto para o gráfico de comparativo entre regiões**<br>
-**Por produto: Exceto para o gráfico de comparativo entre produtos**
+- **Pelos períodos: Mensal, Trimestral, Semestral, Anual e Período Completo: Exceto para o gráfico de indice percentual de crescimento**<br>
+- **Por Vendedor: Exceto para o gráfico de comparativo entre vendedores**<br>
+- **Por Região: Exceto para o gráfico de comparativo entre regiões**<br>
+- **Por produto: Exceto para o gráfico de comparativo entre produtos**
 
 ---
 
