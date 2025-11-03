@@ -121,12 +121,12 @@ streamlit run app.py
 ---
 ## Requisitos
 
-- ***Python<br>
-- Streamlit<br>
-- Pandas<br>
-- Plotly<br>
-- Psycopg2<br>
-- Docker***<br>
+- **Python**<br>
+- **Streamlit**<br>
+- **Pandas**<br>
+- **Plotly**<br>
+- **Psycopg2**<br>
+- **Docker**<br>
 
 ---
 
